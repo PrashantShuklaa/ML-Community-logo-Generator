@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ML Community Logo Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">ML Community Logo Generator</h1>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <h2>Create your ML Community Logo</h2>
+        <br />
+        <form id="logoForm" class="logo-form">
+          <label for="placeName">Select logo template</label>
+          <div class="logo-templates">
+            <div>
+              <input
+                type="radio"
+                id="template1"
+                name="template"
+                value="template1"
+                checked
+              />
+              <label for="template1">
+                <img src="template1.png" alt="Template 1" />
+              </label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="template2"
+                name="template"
+                value="template2"
+              />
+              <label for="template2"
+                ><img src="template2.png" alt="Template 2"
+              /></label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="template3"
+                name="template"
+                value="template3"
+              />
+              <label for="template3"
+                ><img src="template3.png" alt="Template 3"
+              /></label>
+            </div>
+          </div>
+
+          <label for="placeName">Enter Place Name:</label>
+          <input
+            type="text"
+            id="placeName"
+            name="placeName"
+            placeholder="Enter your place name"
+            required
+          />
+
+          <button type="submit">Generate Logo</button>
+        </form>
+
+        <div class="logo-preview">
+          <img id="previewLogo" src="" alt="Preview Logo" />
+          <a id="downloadButton" class="download-button" style="display: none"
+            >Download Logo</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 ML Community. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
